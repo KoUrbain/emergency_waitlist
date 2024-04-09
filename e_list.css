@@ -1,0 +1,31 @@
+
+  h1{
+    text-align: center;
+  }
+  #signUp{
+    position: absolute;
+    
+    padding: 20px; 
+    height: 100vh;
+    background-color: #B5E4DA;
+  }
+  #login{
+    position: absolute;
+
+    padding: 20px; 
+    height: 100vh;
+    right: 1%;
+    background-color: #B5E4DA;
+  }
+  p{
+    position: relative;
+    text-align: center;
+    top: 250px;
+  }
+  body{
+    background-image: url(cbf45a69944a62d1d4ef070189ae8f99.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y:0%;
+  }
+  

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Emergency list</title>
+        <link rel="stylesheet" href="e_list.css">
+    </head>
+    <body>
+        <h1>Welcome to the emergency list</h1><hr>
+        <div id="signUp">
+            <h2>Enter the queue</h2>
+            <form action="/e_list.php" target="_blank" method="POST">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="password">Password (3):</label><br>
+                <input type="password" id="password" name="password" pattern="\d{3}" maxlength="3" title="password of exactly 3 letters and digits"><br>
+                <label for="description">Describe your issue:</label><br>
+                <textarea class="big-textbox"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div id="login">
+            <h2>Look up your position</h2>
+            <form action="/e_list.php" target="_blank" method="POST">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="numeric-password">Numeric Password (3 digits):</label><br>
+                <input type="password" id="numeric-password" name="numeric-password" pattern="\d{3}" maxlength="3" title="Numeric password of exactly 3 digits"><br>
+                <input type="submit" value="Log in">
+            </form>
+        </div>
+
+        <p>if not in the queue enter your info as asked in the box on the left</p>
+        <p>If already in the queue enter your first and last name as well as your 3 digit passwordas asked in the right box</p>
+        
+    </body>
+</html>
